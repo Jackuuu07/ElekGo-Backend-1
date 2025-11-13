@@ -21,7 +21,7 @@ export const submitContact = async (req, res) => {
     console.log("📧 Sending email via Resend...");
 
     const response = await resend.emails.send({
-      from: "ElekGo <noreply@kartik.example.com>", // you can use your verified domain or keep 'onresend.com' default
+      from: "ElekGo <onboarding@resend.dev>", // you can use your verified domain or keep 'onresend.com' default
       to: process.env.ADMIN_EMAIL,
       subject: "📬 New Contact Form Submission",
       html: `
